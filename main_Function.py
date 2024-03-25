@@ -24,8 +24,9 @@ G = PIPS_Corum.copy()
     To run code parallel in Windows and Unix, we nee to call Find_CNP from PC2P_ParallelMultiprocess
     To run code parallel in Linux and Mac, we nee to call Find_CNP from PC2P_ParallelRay """
 
-edge_cut = PC2P_Sequential.Find_CNP(G)
-#PC2P_ParallelMultiprocess.Find_CNP(PIPS_Corum)
+edge_cut = PC2P_ParallelMultiprocess.Find_CNP(PIPS_Corum)
+# PC2P_Sequential.Find_CNP(G)
+
 #PC2P_ParallelRay.Find_CNP(PIPS_Corum)
 
 """ To save the result clusters in Graph format"""
